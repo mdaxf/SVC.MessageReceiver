@@ -1,0 +1,32 @@
+<Config>
+  <target>
+    <basecallrestwebserviceurl>http://[server]</basecallrestwebserviceurl>
+    <restwebserviceurl>http://[server]/SVC_LPM_MQTTMsgReceiver</restwebserviceurl>
+    <restapikey>F4AEB652-8D37-4F5A-8A2E-1BDE04843AE5</restapikey>
+    <clientid>0F92E127-A06E-4BE3-A1FC-1078F655743A</clientid>    
+  </target>
+  <instances>
+    <instance name="MQTTConnector">
+      <mqtts>
+	        <mqtt>
+            <alias>test1</alias>
+		        <broker>test.mosquitto.org</broker>
+		        <brokerport></brokerport>
+		        <username></username>
+		        <password></password>
+		        <certificationfile></certificationfile>
+		        <rootcertfile></rootcertfile>
+		        <sslprotocol></sslprotocol>
+		        <basecallrestwebserviceurl>http://[server]</basecallrestwebserviceurl>
+		        <restwebserviceurl>http://[server]/SVC_LPM_MQTTMsgReceiver</restwebserviceurl>
+		        <restapikey>F4AEB652-8D37-4F5A-8A2E-1BDE04843AE5</restapikey>
+            <clientid>0F92E127-A06E-4BE3-A1FC-1078F655743A</clientid>
+		        <topics>
+			        <topic alias="topic1"></topic>
+			        <topic alias="topic2">testtopic/2</topic>
+		        </topics>
+	        </mqtt>
+        </mqtts>
+      </instance>
+    </instances>
+</Config>
